@@ -23,14 +23,11 @@ body {
     flex-direction: column;
     align-items: center;
 }
-main {
-    position: relative;
-}
 
 .header-component {
     position: relative;
 }
-header{
+.heading{
     position: relative;
     z-index: 2;
     padding: 1.9rem;
@@ -51,6 +48,36 @@ header{
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
+.container {
+    background-color: var(--DarkBlue);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+    align-items: center;
+}
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.schedule img {
+    align-self: flex-end;
+}
+.project {
+    line-height: 0.5;
+}
+.activity {
+    background-color: var(--White);
+    border-radius: 1rem;
+    position: relative;
+    padding: 1.9rem;
+}
+.activity img {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
 
 .profile-image {
     border: 3px solid var(--White);
@@ -58,7 +85,6 @@ header{
     width: 4.4rem;
     height: 4.4rem;
 }
-
 .profile-details {
     line-height: 0.5;
 }
@@ -81,15 +107,12 @@ ul {
     background-color: var(--DarkBlue);
 }
 
-
-
-.few {
-    background-color: var(--DarkBlue);
-    padding: 10px 0;
+.ellipsis {
+    height: 5px;
+    width: 21px;
 }
 
 .work, .play, .exercise, .study, .social, .care {
-    padding: 1.9rem;
-    margin-top: 1.5rem;
-    position: static;
+    margin-top: 5rem;
+    position: relative;
 }
