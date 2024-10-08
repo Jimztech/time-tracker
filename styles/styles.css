@@ -19,15 +19,20 @@ body {
     font-family: "Rubik", sans-serif;
     background-color: var(--VeryDarkBlue);
     max-width: 100%;
-}
-main {
-    background-color: var(--White);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+main {
+    position: relative;
+}
 
+.header-component {
+    position: relative;
+}
 header{
+    position: relative;
+    z-index: 2;
     padding: 1.9rem;
     background-color: var(--Blue);
     display: flex;
@@ -35,6 +40,23 @@ header{
     gap: 1rem;
     margin-top: 1rem;
     align-items: center;
+    border-radius: 1rem;
+}
+.time-list {
+    background-color: var(--DarkBlue);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: -40px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.profile-image {
+    border: 3px solid var(--White);
+    border-radius: 50%;
+    width: 4.4rem;
+    height: 4.4rem;
 }
 
 .profile-details {
@@ -48,4 +70,26 @@ header{
 .profile-details p {
     color: var(--White);
     opacity: 0.5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--DarkBlue);
+}
+
+
+
+.few {
+    background-color: var(--DarkBlue);
+    padding: 10px 0;
+}
+
+.work, .play, .exercise, .study, .social, .care {
+    padding: 1.9rem;
+    margin-top: 1.5rem;
+    position: static;
 }
