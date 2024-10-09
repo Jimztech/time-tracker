@@ -18,14 +18,13 @@
 body {
     font-family: "Rubik", sans-serif;
     background-color: var(--VeryDarkBlue);
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
 }
-main {
-    padding: 30px;
-}
+
+
 .header-component {
     position: relative;
 }
@@ -164,4 +163,47 @@ span {
     opacity: 0.5;
 }
 
-@media (min-width: 50rem) {}
+@media (min-width: 50rem) {
+    main {
+    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .header-component {
+        grid-column: 1/2;
+        grid-row: 1/-1;
+    }
+    .work {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .play {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .study {
+        grid-column: 4;
+        grid-row: 1/2;
+    }
+    .exercise {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+    .social {
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+    .care {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .heading {
+        margin-top: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
