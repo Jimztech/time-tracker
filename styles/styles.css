@@ -55,6 +55,11 @@ body {
     flex-direction: row;
     gap: 3.2rem;
     align-items: center;
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    width: 93%;
+    border-radius: 1rem;
 }
 .schedule {
     display: flex;
@@ -72,6 +77,7 @@ body {
     border-radius: 1rem;
     position: relative;
     padding: 1.9rem;
+    z-index: 1;
 }
 .activity img {
     position: absolute;
@@ -115,4 +121,26 @@ ul {
 .work, .play, .exercise, .study, .social, .care {
     margin-top: 5rem;
     position: relative;
+}
+.work-activity {
+    background-color: var(--WorkLightRed);
+}
+.play-activity {
+    background-color: var(--PlaySoftBlue);
+}
+.study-activity {
+    background-color: var(--StudyLightRed);
+}
+.exercise-activity {
+    background-color: var(--LimeGreen);
+}
+.social-activity {
+    background-color: var(--Violet);
+}
+.care-activity {
+    background-color: var(--SoftOrange);
+}
+
+.social-icon {
+    height: 70px;
 }
