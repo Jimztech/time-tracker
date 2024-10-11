@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
     --Blue: hsl(246, 80%, 60%);
     --WorkLightRed: hsl(15, 100%, 70%);
     --PlaySoftBlue: hsl(195, 74%, 62%);
     --StudyLightRed: hsl(348, 100%, 68%);
-    --LimeGreen: hsl(145, 58%, 55%);
-    --Violet: hsl(264, 64%, 52%);
-    --SoftOrange: hsl(43, 84%, 65%);
+    --ExerciseLimeGreen: hsl(145, 58%, 55%);
+    --SocialViolet: hsl(264, 64%, 52%);
+    --CareSoftOrange: hsl(43, 84%, 65%);
 
     --VeryDarkBlue: hsl(226, 43%, 10%);
     --DarkBlue: hsl(235, 46%, 20%);
@@ -14,164 +13,176 @@
     --PaleBlue: hsl(236, 100%, 87%);
     --White: hsl(0, 0%, 100%);
 }
+/* Note two line spaces declares end of section. */
 
 body {
     font-family: "Rubik", sans-serif;
     background-color: var(--VeryDarkBlue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 100%;
 }
-
-
-.header-component {
-    position: relative;
-}
-.heading{
-    position: relative;
-    z-index: 2;
-    padding: 1.9rem;
-    background-color: var(--Blue);
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 1rem;
-    align-items: center;
-    border-radius: 1rem;
-}
-.time-list {
-    background-color: var(--DarkBlue);
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    bottom: -40px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-.container {
-    background-color: var(--DarkBlue);
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 3.2rem;
-    align-items: center;
-    z-index: 2;
-    position: absolute;
-    top: 30px;
-    width: 93%;
-    border-radius: 1rem;
-}
-.schedule {
+main {
+    padding: 8rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-}
-.schedule img {
-    align-self: flex-end;
-}
-.project {
-    line-height: 0.5;
-}
-.activity {
-    background-color: var(--White);
-    border-radius: 1rem;
-    position: relative;
-    padding: 1.9rem;
-    z-index: 1;
-}
-.activity img {
-    position: absolute;
-    bottom: -10px;
-    right: 10px;
-}
-
-.profile-image {
-    border: 3px solid var(--White);
-    border-radius: 50%;
-    width: 4.4rem;
-    height: 4.4rem;
-}
-.profile-details {
-    line-height: 0.5;
-}
-.profile-details h1 {
-    font-size: 1.12rem;
-    color: var(--White);
-    font-weight: 100;
-}
-.profile-details p {
-    color: var(--White);
-    opacity: 0.5;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: var(--DarkBlue);
 }
 
 .ellipsis {
-    height: 5px;
-    width: 21px;
+    height: 0.35rem;
 }
 
-.work, .play, .exercise, .study, .social, .care {
-    margin-top: 7rem;
+/* Header component section */
+.header-component {
     position: relative;
 }
+.heading {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: var(--Blue);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: absolute;
+    z-index: 2;
+    bottom: 3rem;
+    width: 87%;
+}
+.profile-image {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid var(--White);
+}
+
+/*List section, for daily, weekly and monthly*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.daily-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 1.5rem 2rem;
+    background-color: var(--DarkBlue);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.work, .play, .exercise, .care, .social, .study {
+    margin-top: 6rem;
+    position: relative;
+}
+.top-container {
+    position: relative;
+}
+.activity img {
+    position: absolute;
+    right: 1rem;
+    top: 5px;
+}
 .work-activity {
+    border-radius: 1rem;
+    padding: 3.5rem 3rem;
     background-color: var(--WorkLightRed);
+    position: relative;
 }
 .play-activity {
+    border-radius: 1rem;
+    padding: 3.5rem 3rem;
     background-color: var(--PlaySoftBlue);
+    position: relative;
 }
 .study-activity {
+    border-radius: 1rem;
+    padding: 3.5rem 3rem;
     background-color: var(--StudyLightRed);
+    position: relative;
 }
 .exercise-activity {
-    background-color: var(--LimeGreen);
+    border-radius: 1rem;
+    padding: 3.5rem 3rem;
+    background-color: var(--ExerciseLimeGreen);
+    position: relative;
 }
 .social-activity {
-    background-color: var(--Violet);
+    border-radius: 1rem;
+    padding: 3.5rem 3rem;
+    background-color: var(--SocialViolet);
+    position: relative;
 }
 .care-activity {
-    background-color: var(--SoftOrange);
+    border-radius: 1rem;
+    padding: 3.5rem 3rem;
+    background-color: var(--CareSoftOrange);
+    position: relative;
 }
 
-.social-icon {
-    height: 70px;
+
+/*2nd div in a section or container div, used for direction or placement of elements*/
+.container {
+    background-color: var(--DarkBlue);
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 2.3rem;
+    width: 90.5%;
 }
-.ending {
-    padding: 20px;
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.project-paragraph {
-    font-size: 1rem;
-    color: var(--White);
+
+/* mobile view for container element from 500px to 784px */
+@media (min-width: 31.25rem) and (max-width: 49rem) {
+    .container {
+        width: 95%;
+    }
+    .heading {
+        width: 90%;
+    }
 }
-.project h2 {
-    font-weight: 100;
-    font-size: 1.5rem;
-    color: var(--White);
-}
-span {
-    color: var(--White);
-    opacity: 0.5;
+@media (min-width: 760px) and (max-width: 780px) {
+    .heading {
+        width: 94%;
+    }
 }
 
+/* desktop view*/
 @media (min-width: 50rem) {
     main {
-    
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 2.5rem;
+    }
+    .daily-list {
+        bottom: -22rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
     }
     .header-component {
+        margin-top: 2rem;
         grid-column: 1/2;
         grid-row: 1/-1;
     }
@@ -199,11 +210,37 @@ span {
         grid-column: 4;
         grid-row: 2;
     }
+    
+}
 
-    .heading {
-        margin-top: 6.5rem;
-        display: flex;
-        flex-direction: column;
-        
-    }
+/*handwriting section*/
+span, .project-heading, .project-paragraph {
+    color: var(--White);
+}
+.project-heading {
+    font-weight: 100;
+}
+span {
+    opacity: 0.5;
+}
+.project-heading, .project-paragraph {
+    line-height: 0.5;
+}
+.project-paragraph {
+    font-weight: bold;
+}
+.daily-list {
+    font-weight: 120;
+    color: var(--White);
+    opacity: 0.5;
+}
+.profile-details p, h1 {
+    color: var(--White);
+    line-height: 0.8;
+}
+.profile-details p {
+    opacity: 0.5;
+}
+.profile-details h1 {
+    font-weight: 100;
 }

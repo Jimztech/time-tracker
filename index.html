@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="reset" href="./styles/reset.css">
-  
   <title>Time tracking dashboard</title>
 </head>
 <body>
@@ -25,7 +30,7 @@
         </div>
       </header>
       <div class="time-list">
-        <ul>
+        <ul class="daily-list">
           <li>Daily</li>
           <li>Weekly</li>
           <li>Monthly</li>
@@ -34,96 +39,114 @@
     </section>
 
     <section class="work">
-      <header class="activity work-activity">
-        <img src="./images/icon-work.svg" alt="work icon">
+      <header class="top-container">
+        <div class="work-activity"></div>
+        <div class="activity">
+          <img src="./images/icon-work.svg" alt="work icon">
+        </div>
       </header>
       <div class="container">
         <div class="project">
           <p class="project-paragraph">Work</p>
-          <h2 class="project-heading">32hrs</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
         </div>
         <div class="schedule">
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+          <h2 class="project-heading">32hrs</h2>
           <span class="previous">Last Week - 36hrs</span>
         </div>
       </div>
     </section>
 
     <section class="play">
-      <header class="activity play-activity">
-        <img src="./images/icon-play.svg" alt="play icon">
+      <header class="top-container">
+        <div class="play-activity"></div>
+        <div class="activity">
+          <img src="./images/icon-play.svg" alt="play icon">
+        </div>
       </header>
       <div class="container">
         <div class="project">
           <p class="project-paragraph">Play</p>
-          <h2 class="project-heading">10hrs</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
         </div>
         <div class="schedule">
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+          <h2 class="project-heading">10hrs</h2>
           <span class="previous">Last Week - 8hrs</span> 
         </div>
       </div>
     </section>
 
     <section class="study">
-      <header class="activity study-activity">
-        <img src="./images/icon-study.svg" alt="study icon">
+      <header class="top-container">
+        <div class="study-activity"></div>
+        <div class="activity">
+          <img src="./images/icon-study.svg" alt="study icon">
+        </div>
       </header>
       <div class="container">
         <div class="project">
           <p class="project-paragraph">Study</p>
-          <h2 class="project-heading">4hrs</h2> 
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis"> 
         </div>
         <div class="schedule">
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+          <h2 class="project-heading">4hrs</h2>
           <span class="previous">Last Week - 7hrs</span> 
         </div>
       </div>
     </section>
 
     <section class="exercise">
-      <header class="activity exercise-activity">
-        <img src="./images/icon-exercise.svg" alt="exercise icon">
+      <header class="top-container">
+        <div class="exercise-activity"></div>
+        <div class="activity">
+          <img src="./images/icon-exercise.svg" alt="exercise icon">
+        </div>
       </header>
       <div class="container">
         <div class="project">
           <p class="project-paragraph">Exercise</p>
-          <h2 class="project-heading">4hrs</h2> 
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
         </div>
         <div class="schedule">
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+          <h2 class="project-heading">4hrs</h2> 
           <span class="previous">Last Week - 5hrs</span> 
         </div>
       </div>
     </section>
 
     <section class="social">
-      <header class="activity social-activity">
-        <img src="./images/icon-social.svg" alt="social icon" class="social-icon">
+      <header class="top-container">
+        <div class="social-activity"></div>
+        <div class="activity">
+          <img src="./images/icon-social.svg" alt="social icon" class="social-icon">
+        </div>
       </header>
       <div class="container">
         <div class="project">
           <p class="project-paragraph">Social</p>
-          <h2 class="project-heading">5hrs</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
         </div>
         <div class="schedule">
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+          <h2 class="project-heading">5hrs</h2>
           <span>Last Week - 10hrs</span> 
         </div>
       </div>
     </section>
 
     <section class="care">
-      <header class="activity care-activity">
-        <img src="./images/icon-self-care.svg" alt="self-care icon">
+      <header class="top-container">
+        <div class="care-activity"></div>
+        <div class="activity">
+          <img src="./images/icon-self-care.svg" alt="self-care icon">
+        </div>
       </header>
       <div class="container">
         <div class="project">
           <p class="project-paragraph">Self Care</p>
-          <h2 class="project-heading">2hrs</h2> 
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
         </div>
         <div class="schedule">
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+          <h2 class="project-heading">2hrs</h2> 
           <span>Last Week - 2hrs</span> 
         </div>
       </div>
