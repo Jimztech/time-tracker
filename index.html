@@ -1,157 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="reset" href="./styles/reset.css">
-  <title>Time tracking dashboard</title>
-</head>
-<body>
-  <main id="main">
-    <section class="header-component">
-      <header class="heading" id="heading">
-        <img 
-          src="./images/image-jeremy.png" 
-          alt="profile image" 
-          class="profile-image"
-        >
-        <div class="profile-details">
-          <p>Report for</p>
-          <h1 class="typo">Jeremy Robson</h1>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="reset" href="./styles/reset.css" />
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <main id="main">
+      <section class="header-component">
+        <header class="heading" id="heading">
+          <img
+            src="./images/image-jeremy.png"
+            alt="profile image"
+            class="profile-image"
+          />
+          <div class="profile-details">
+            <p>Report for</p>
+            <h1 class="typo">Jeremy Robson</h1>
+          </div>
+        </header>
+        <div class="time-list">
+          <ul class="daily-list" id="daily-list">
+            <li id="daily" class="inactiveElement">Daily</li>
+            <li id="weekly">Weekly</li>
+            <li id="monthly" class="inactiveElement">Monthly</li>
+          </ul>
         </div>
-      </header>
-      <div class="time-list">
-        <ul class="daily-list" id="daily-list">
-          <li id="daily">Daily</li>
-          <li id="weekly">Weekly</li>
-          <li id="monthly">Monthly</li>
-        </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="work" id="work">
-      <header class="top-container">
-        <div class="work-activity"></div>
-        <div class="activity">
-          <img src="./images/icon-work.svg" alt="work icon">
+      <section class="work" id="work">
+        <header class="top-container">
+          <div class="work-activity"></div>
+          <div class="activity">
+            <img src="./images/icon-work.svg" alt="work icon" />
+          </div>
+        </header>
+        <div class="container">
+          <div class="project">
+            <p class="project-paragraph">Work</p>
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="ellipsis"
+              class="ellipsis"
+            />
+          </div>
+          <div class="schedule">
+            <h2 class="project-heading" id="project-heading">32hrs</h2>
+            <span class="previous" id="previous">Last Week - 36hrs</span>
+          </div>
         </div>
-      </header>
-      <div class="container">
-        <div class="project">
-          <p class="project-paragraph">Work</p>
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
-        </div>
-        <div class="schedule">
-          <h2 class="project-heading" id="project-heading">32hrs</h2>
-          <span class="previous" id="previous">Last Week - 36hrs</span>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="play" id="play">
-      <header class="top-container">
-        <div class="play-activity"></div>
-        <div class="activity">
-          <img src="./images/icon-play.svg" alt="play icon">
+      <section class="play" id="play">
+        <header class="top-container">
+          <div class="play-activity"></div>
+          <div class="activity">
+            <img src="./images/icon-play.svg" alt="play icon" />
+          </div>
+        </header>
+        <div class="container">
+          <div class="project">
+            <p class="project-paragraph">Play</p>
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="ellipsis"
+              class="ellipsis"
+            />
+          </div>
+          <div class="schedule">
+            <h2 class="project-heading" id="project-heading">10hrs</h2>
+            <span class="previous" id="previous">Last Week - 8hrs</span>
+          </div>
         </div>
-      </header>
-      <div class="container">
-        <div class="project">
-          <p class="project-paragraph">Play</p>
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
-        </div>
-        <div class="schedule">
-          <h2 class="project-heading" id="project-heading">10hrs</h2>
-          <span class="previous" id="previous">Last Week - 8hrs</span> 
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="study" id="study">
-      <header class="top-container">
-        <div class="study-activity"></div>
-        <div class="activity">
-          <img src="./images/icon-study.svg" alt="study icon">
+      <section class="study" id="study">
+        <header class="top-container">
+          <div class="study-activity"></div>
+          <div class="activity">
+            <img src="./images/icon-study.svg" alt="study icon" />
+          </div>
+        </header>
+        <div class="container">
+          <div class="project">
+            <p class="project-paragraph">Study</p>
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="ellipsis"
+              class="ellipsis"
+            />
+          </div>
+          <div class="schedule">
+            <h2 class="project-heading" id="project-heading">4hrs</h2>
+            <span class="previous" id="previous">Last Week - 7hrs</span>
+          </div>
         </div>
-      </header>
-      <div class="container">
-        <div class="project">
-          <p class="project-paragraph">Study</p>
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis"> 
-        </div>
-        <div class="schedule">
-          <h2 class="project-heading" id="project-heading">4hrs</h2>
-          <span class="previous" id="previous">Last Week - 7hrs</span> 
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="exercise" id="exercise">
-      <header class="top-container">
-        <div class="exercise-activity"></div>
-        <div class="activity">
-          <img src="./images/icon-exercise.svg" alt="exercise icon">
+      <section class="exercise" id="exercise">
+        <header class="top-container">
+          <div class="exercise-activity"></div>
+          <div class="activity">
+            <img src="./images/icon-exercise.svg" alt="exercise icon" />
+          </div>
+        </header>
+        <div class="container">
+          <div class="project">
+            <p class="project-paragraph">Exercise</p>
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="ellipsis"
+              class="ellipsis"
+            />
+          </div>
+          <div class="schedule">
+            <h2 class="project-heading" id="project-heading">4hrs</h2>
+            <span class="previous" id="previous">Last Week - 5hrs</span>
+          </div>
         </div>
-      </header>
-      <div class="container">
-        <div class="project">
-          <p class="project-paragraph">Exercise</p>
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
-        </div>
-        <div class="schedule">
-          <h2 class="project-heading" id="project-heading">4hrs</h2> 
-          <span class="previous" id="previous">Last Week - 5hrs</span> 
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="social" id="social">
-      <header class="top-container">
-        <div class="social-activity"></div>
-        <div class="activity">
-          <img src="./images/icon-social.svg" alt="social icon" class="social-icon">
+      <section class="social" id="social">
+        <header class="top-container">
+          <div class="social-activity"></div>
+          <div class="activity">
+            <img
+              src="./images/icon-social.svg"
+              alt="social icon"
+              class="social-icon"
+            />
+          </div>
+        </header>
+        <div class="container">
+          <div class="project">
+            <p class="project-paragraph">Social</p>
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="ellipsis"
+              class="ellipsis"
+            />
+          </div>
+          <div class="schedule">
+            <h2 class="project-heading" id="project-heading">5hrs</h2>
+            <span class="previous" id="previous">Last Week - 10hrs</span>
+          </div>
         </div>
-      </header>
-      <div class="container">
-        <div class="project">
-          <p class="project-paragraph">Social</p>
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
-        </div>
-        <div class="schedule">
-          <h2 class="project-heading" id="project-heading">5hrs</h2>
-          <span class="previous" id="previous">Last Week - 10hrs</span> 
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="care" id="self-care">
-      <header class="top-container">
-        <div class="care-activity"></div>
-        <div class="activity">
-          <img src="./images/icon-self-care.svg" alt="self-care icon">
+      <section class="care" id="self-care">
+        <header class="top-container">
+          <div class="care-activity"></div>
+          <div class="activity">
+            <img src="./images/icon-self-care.svg" alt="self-care icon" />
+          </div>
+        </header>
+        <div class="container">
+          <div class="project">
+            <p class="project-paragraph">Self Care</p>
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="ellipsis"
+              class="ellipsis"
+            />
+          </div>
+          <div class="schedule">
+            <h2 class="project-heading" id="project-heading">2hrs</h2>
+            <span class="previous" id="previous">Last Week - 2hrs</span>
+          </div>
         </div>
-      </header>
-      <div class="container">
-        <div class="project">
-          <p class="project-paragraph">Self Care</p>
-          <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
-        </div>
-        <div class="schedule">
-          <h2 class="project-heading" id="project-heading">2hrs</h2> 
-          <span class="previous" id="previous">Last Week - 2hrs</span> 
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="./index.js"></script>
-</body>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>
