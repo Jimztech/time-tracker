@@ -256,7 +256,6 @@ span {
 }
 
 /* Active state */
-.daily-list:active {
-    color: var(--White);
+.daily-list li {
     cursor: pointer;
 }
