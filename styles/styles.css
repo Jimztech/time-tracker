@@ -26,6 +26,7 @@ main {
     flex-direction: column;
 }
 
+/*component*/
 .ellipsis {
     height: 0.35rem;
 }
@@ -212,6 +213,8 @@ ul {
     }
     .typo {
         font-weight: 500;
+        font-size: 2rem;
+        line-height: 1;
     }
     .schedule {
         display: flex;
