@@ -254,3 +254,9 @@ span {
 .profile-details h1 {
     font-weight: 100;
 }
+
+/* Active state */
+.daily-list:active {
+    color: var(--White);
+    cursor: pointer;
+}
